@@ -1,0 +1,272 @@
+/* Обнуление стилей */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #080b10;
+  color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.global-logo {
+  position: fixed;
+  top: 40px;
+  left: 40px;
+  z-index: 10;
+}
+
+.insta-icon {
+  width: 100px;
+  height: 100px;
+}
+
+/* Основной контейнер */
+.page {
+  display: flex;
+  flex: 1;
+  width: 100%;
+}
+
+/* ЛЕВАЯ ПАНЕЛЬ */
+.left-panel {
+  flex: 0 0 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;   /* прижимаем контент к верху */
+  align-items: center;
+  padding: 140px 40px 40px;      /* верхний отступ примерно до низа логотипа */
+  border-right: 2px solid #6b7b80; /* линия между левым и правым блоками */
+}
+
+.hero {
+  max-width: 700px;
+  text-align: center;
+}
+
+.hero-header {
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.logo-img {
+  height: 50px; /* Размер логотипа */
+  filter: invert(1); /* Делаем черный логотип белым, если logo.png черный */
+}
+
+.hero-title {
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  
+  font-size: 2.8vw;
+  font-weight: 400;
+}
+
+/* Градиентный текст */
+.title-highlight {
+  background: linear-gradient(to right, #f58529, #dd2a7b, #8134af);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 700px; /* увеличено примерно на 10% */
+}
+
+/* ПРАВАЯ ПАНЕЛЬ */
+.right-panel {
+  flex: 0 0 35%;
+  background-color: #12232f; /* Очень темно-синий оттенок из скрина */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth {
+  width: 100%;
+  max-width: 560px;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+
+.auth-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: #f5f5f5;
+}
+
+/* Форма и инпуты */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.input {
+  background: #12232f;     /* цвет фона как у родителя */
+  border: 1px solid #6b7b80;
+  border-radius: 12px;     /* сильнее скругляем углы */
+  color: white;
+  padding: 16px 18px;      /* увеличиваем высоту */
+  font-size: 15px;
+  outline: none;
+  height: 60px;
+}
+
+.input::placeholder {
+  color: #8e8e8e;
+}
+
+.input:focus {
+  border-color: #a8a8a8;
+}
+
+/* Кнопки */
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 16px;        
+  height: 44px;              
+  border-radius: 999px;      
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid #6b7b80;
+  width: 100%;
+  margin-top: 8px;
+  transition: opacity 0.2s;
+}
+
+.btn-primary {
+  background-color: #00376b;
+  color: #6b7b80;
+}
+
+.btn-primary:hover {
+  background-color: #0095f6;
+}
+
+.forgot-link {
+  background: none;
+  border: none;
+  color: #f5f5f5;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 20px 0;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 1px solid #363636;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.btn-facebook {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.fb-icon {
+  width: 18px;
+  height: 18px;
+  color: #1877f2;
+}
+
+.btn-create {
+  color: #082bf1;
+  border: 1px solid #082bf1;
+}
+
+
+/* Логотип Meta внизу формы */
+.auth-footer {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.meta-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+}
+
+.meta-icon {
+  width: 60px;
+  height: auto;
+}
+
+/* ОБЩИЙ ФУТЕР */
+.site-footer {
+  background-color: #000;
+  padding: 24px 20px;
+  font-size: 12px;
+  color: #8e8e8e;
+  border-top: 1px solid #6b7b80; /* линия, отделяющая футер от body */
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.footer-link {
+  color: #8e8e8e;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-language {
+  cursor: pointer;
+}
+
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px solid #8e8e8e;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+
+/* Скрытие элементов для скринридеров */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
