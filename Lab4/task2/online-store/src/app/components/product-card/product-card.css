@@ -1,0 +1,160 @@
+.main-img-container {
+  position: relative; /* Батырмаларды суреттің үстіне қою үшін */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-btn {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-btn:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+.prev {
+  left: 5px;
+}
+.next {
+  right: 5px;
+}
+
+.description-container {
+  height: 100px; /* Биіктікті 100px-ке бекітеміз (прокрутка көрінуі үшін) */
+  overflow-y: auto; /* Тігінен прокрутка қосу */
+  overflow-x: hidden; /* Көлденең прокрутканы жабу */
+  margin: 10px 0;
+  padding: 5px;
+  background-color: #fafafa; /* Қай жерде екенін көру үшін кішкене түс береміз */
+  border-radius: 4px;
+}
+
+.description {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  white-space: pre-line; /* Жаңа жолдарды сақтайды ( ✨, ✅ сияқтылар үшін) */
+  margin: 0; /* Артық арақашықтықты алып тастаймыз */
+  color: #444;
+}
+
+/* Прокрутка (Scrollbar) әрқашан көрініп тұруы үшін (Chrome, Edge, Safari) */
+.description-container::-webkit-scrollbar {
+  width: 6px; /* Скроллдың ені */
+}
+
+.description-container::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Скролл жүретін жолдың түсі */
+}
+
+.description-container::-webkit-scrollbar-thumb {
+  background: #888; /* Жүгірткінің түсі */
+  border-radius: 10px;
+}
+
+.description-container::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Басқандағы түсі */
+}
+
+.product-card {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  overflow: hidden;
+  background: white;
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.main-img {
+  min-height: 200px;
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  padding: 10px;
+}
+
+.thumbnails {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.thumbnails img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.thumbnails img.active {
+  border-color: #f14635; /* Kaspi Red */
+}
+
+.info {
+  padding: 15px;
+}
+
+.price {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #333;
+  margin: 10px 0;
+}
+
+/* .description {
+  font-size: 0.9rem;
+  color: #666;
+  height: 3.6em;
+  overflow: hidden;
+} */
+
+.kaspi-link {
+  display: block;
+  text-align: center;
+  background: #0089d0;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.share-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.share-buttons button {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.btn-wa {
+  background: #25d366;
+}
+.btn-tg {
+  background: #0088cc;
+}

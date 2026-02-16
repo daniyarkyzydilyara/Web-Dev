@@ -1,0 +1,12 @@
+<!-- Шапка сайта -->
+<header style="background-color: #f14635; color: white; padding: 1rem; text-align: center; margin-bottom: 20px;">
+  <h1>{{ title() }}</h1>
+</header>
+
+<main>
+  <!-- Вызываем наш компонент со списком 10 товаров -->
+  <app-product-list></app-product-list>
+</main>
+
+<!-- Если у тебя настроен роутинг, оставь это внизу, но для текущей задачи он может не понадобиться -->
+<router-outlet></router-outlet>
