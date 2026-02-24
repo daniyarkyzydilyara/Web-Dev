@@ -1,0 +1,30 @@
+header {
+  text-align: center;
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+button {
+  padding: 10px 20px;
+  border: 2px solid #f14635;
+  background: white;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+button.active {
+  background: #f14635;
+  color: white;
+}
+
+.welcome {
+  text-align: center;
+  margin-top: 50px;
+  color: #666;
+}

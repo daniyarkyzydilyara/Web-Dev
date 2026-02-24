@@ -1,0 +1,25 @@
+<header>
+  <h1>My Kaspi Store</h1>
+  <nav class="categories">
+    @for (cat of categories; track cat.id) {
+      <button (click)="selectCategory(cat.id)" [class.active]="selectedCategoryId === cat.id">
+        {{ cat.name }}
+      </button>
+    }
+  </nav>
+</header>
+
+<main>
+  @if (selectedCategoryId) {
+    <app-product-list
+      *ngIf="selectedCategoryId"
+      [products]="filteredProducts"
+      (removeProduct)="handleRemove($event)"
+    >
+    </app-product-list>
+  } @else {
+    <div class="welcome">
+      <h2>Welcome! Please select a category to start shopping.</h2>
+    </div>
+  }
+</main>

@@ -1,0 +1,31 @@
+<div class="product-card">
+  <div class="main-img-container">
+    <button class="nav-btn prev" (click)="prevImage()">❮</button>
+    <img [src]="product().images[currentImageIndex]" class="main-img">
+    <button class="nav-btn next" (click)="nextImage()">❯</button>
+  </div>
+
+  <div class="info">
+    <h3 style="margin: 0; font-size: 1.1rem;">{{ product().name }}</h3>
+    
+    <div class="description-container">
+      <p style="white-space: pre-line; margin: 0;">{{ product().description }}</p>
+    </div>
+
+    <div class="price">{{ product().price | number }} ₸</div>
+    
+    <div style="margin-bottom: 15px; color: #ff9800;">⭐ {{ product().rating }}</div>
+
+    <a [href]="product().link" target="_blank" class="kaspi-link">View on Kaspi</a>
+
+    <div class="share-row">
+      <button (click)="shareOnWhatsapp()" class="wa">WhatsApp</button>
+      <button (click)="shareOnTelegram()" class="tg">Telegram</button>
+    </div>
+
+    <div class="admin-row">
+      <button (click)="like()" class="like-btn">❤️ {{ product().likes }}</button>
+      <button (click)="deleteProduct()" class="del-btn">🗑️ Remove</button>
+    </div>
+  </div>
+</div>

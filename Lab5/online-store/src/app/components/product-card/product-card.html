@@ -1,0 +1,39 @@
+<div class="product-card">
+  <div class="gallery">
+    <div class="main-img-container">
+      <button class="nav-btn prev" (click)="prevImage()">❮</button>
+      
+      <img [src]="fullGallery[currentImageIndex]" [alt]="product.name" class="main-img">
+      
+      <button class="nav-btn next" (click)="nextImage()">❯</button>
+    </div>
+    
+    <div class="thumbnails">
+      <img *ngFor="let img of fullGallery; let i = index" 
+           [src]="img" 
+           [class.active]="i === currentImageIndex"
+           (click)="changeImage(i)">
+    </div>
+  </div>
+
+  <div class="info">
+    <h3>{{ product.name }}</h3>
+    
+    <div class="description-container">
+       <p class="description">{{ product.description }}</p>
+    </div>
+    
+    <div class="rating">
+      <span class="star">⭐</span> {{ product.rating }}
+    </div>
+
+    <div class="price">{{ product.price | number }} ₸</div>
+
+    <a [href]="product.link" target="_blank" class="kaspi-link">View on Kaspi</a>
+
+    <div class="share-buttons">
+      <button (click)="shareOnWhatsapp()" class="btn-wa">WhatsApp</button>
+      <button (click)="shareOnTelegram()" class="btn-tg">Telegram</button>
+    </div>
+  </div>
+</div>

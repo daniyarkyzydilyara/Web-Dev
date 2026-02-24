@@ -1,0 +1,5 @@
+<div class="product-grid">
+  @for (prod of products(); track prod.id) {
+    <app-product-item [product]="prod" (remove)="onRemove($event)"></app-product-item>
+  }
+</div>
