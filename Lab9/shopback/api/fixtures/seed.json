@@ -1,0 +1,47 @@
+[
+  {
+    "model": "api.category",
+    "pk": 1,
+    "fields": { "name": "Electronics" }
+  },
+  {
+    "model": "api.category",
+    "pk": 2,
+    "fields": { "name": "Books" }
+  },
+  {
+    "model": "api.category",
+    "pk": 3,
+    "fields": { "name": "Clothing" }
+  },
+  {
+    "model": "api.category",
+    "pk": 4,
+    "fields": { "name": "Home & Kitchen" }
+  },
+
+  { "model": "api.product", "pk": 1, "fields": { "name": "Smartphone X", "price": 699.99, "description": "6.5-inch display, 128GB storage", "count": 12, "is_active": true, "category": 1 } },
+  { "model": "api.product", "pk": 2, "fields": { "name": "Wireless Headphones", "price": 129.5, "description": "Noise-cancelling over-ear headphones", "count": 25, "is_active": true, "category": 1 } },
+  { "model": "api.product", "pk": 3, "fields": { "name": "Mechanical Keyboard", "price": 89.0, "description": "RGB backlit keyboard with blue switches", "count": 18, "is_active": true, "category": 1 } },
+  { "model": "api.product", "pk": 4, "fields": { "name": "Portable Charger", "price": 24.99, "description": "10000mAh power bank", "count": 40, "is_active": true, "category": 1 } },
+  { "model": "api.product", "pk": 5, "fields": { "name": "Action Camera", "price": 199.99, "description": "4K action camera with waterproof case", "count": 10, "is_active": true, "category": 1 } },
+
+  { "model": "api.product", "pk": 6, "fields": { "name": "Django for Beginners", "price": 29.99, "description": "A practical introduction to Django", "count": 30, "is_active": true, "category": 2 } },
+  { "model": "api.product", "pk": 7, "fields": { "name": "Clean Code", "price": 34.5, "description": "A Handbook of Agile Software Craftsmanship", "count": 15, "is_active": true, "category": 2 } },
+  { "model": "api.product", "pk": 8, "fields": { "name": "The Pragmatic Programmer", "price": 39.99, "description": "Your Journey to Mastery", "count": 14, "is_active": true, "category": 2 } },
+  { "model": "api.product", "pk": 9, "fields": { "name": "Design Patterns", "price": 44.99, "description": "Elements of Reusable Object-Oriented Software", "count": 9, "is_active": true, "category": 2 } },
+  { "model": "api.product", "pk": 10, "fields": { "name": "Python Cookbook", "price": 49.0, "description": "Recipes for mastering Python 3", "count": 11, "is_active": true, "category": 2 } },
+
+  { "model": "api.product", "pk": 11, "fields": { "name": "Classic T-Shirt", "price": 14.99, "description": "100% cotton unisex tee", "count": 60, "is_active": true, "category": 3 } },
+  { "model": "api.product", "pk": 12, "fields": { "name": "Hoodie", "price": 34.99, "description": "Warm fleece hoodie", "count": 22, "is_active": true, "category": 3 } },
+  { "model": "api.product", "pk": 13, "fields": { "name": "Jeans", "price": 49.99, "description": "Slim-fit denim jeans", "count": 16, "is_active": true, "category": 3 } },
+  { "model": "api.product", "pk": 14, "fields": { "name": "Sneakers", "price": 59.99, "description": "Comfortable everyday sneakers", "count": 20, "is_active": true, "category": 3 } },
+  { "model": "api.product", "pk": 15, "fields": { "name": "Cap", "price": 9.99, "description": "Adjustable baseball cap", "count": 35, "is_active": true, "category": 3 } },
+
+  { "model": "api.product", "pk": 16, "fields": { "name": "Non-stick Pan", "price": 27.5, "description": "28cm non-stick frying pan", "count": 19, "is_active": true, "category": 4 } },
+  { "model": "api.product", "pk": 17, "fields": { "name": "Knife Set", "price": 39.99, "description": "Stainless steel kitchen knife set", "count": 13, "is_active": true, "category": 4 } },
+  { "model": "api.product", "pk": 18, "fields": { "name": "Coffee Maker", "price": 79.99, "description": "Drip coffee maker with timer", "count": 8, "is_active": true, "category": 4 } },
+  { "model": "api.product", "pk": 19, "fields": { "name": "Desk Lamp", "price": 22.0, "description": "LED lamp with adjustable brightness", "count": 28, "is_active": true, "category": 4 } },
+  { "model": "api.product", "pk": 20, "fields": { "name": "Storage Containers", "price": 18.99, "description": "Set of 10 food storage containers", "count": 33, "is_active": true, "category": 4 } }
+]
+
